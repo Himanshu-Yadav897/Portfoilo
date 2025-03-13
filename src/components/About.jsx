@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 import { BiLogoYoutube, BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 import image from '../../public/image (1).jpg'
