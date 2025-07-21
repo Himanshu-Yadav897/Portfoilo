@@ -1,6 +1,7 @@
 import React from "react";
 import { projectData } from "../projectData";
-
+import { motion } from "framer-motion";
+import { LinkPreview } from "../ui/link-preview";
 
 const Projects = () => {
   return (
@@ -25,7 +26,8 @@ const Projects = () => {
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full"
       >
         {projectData.map((project) => (
-          <a
+          <LinkPreview
+            url={project.link}
             href={project.link}
             key={project.id}
             target="_blank"
@@ -51,7 +53,7 @@ const Projects = () => {
                 ))}
               </div>
             </div>
-          </a>
+          </LinkPreview>
         ))}
       </motion.div>
     </div>

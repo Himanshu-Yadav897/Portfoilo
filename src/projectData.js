@@ -1,63 +1,63 @@
-import project1 from "../public/project1.png";
-import project2 from "../public/project2.png";
-import project3 from "../public/project3.png";
-import project4 from "../public/project4.jpg";
-import project5 from "../public/project5.png";
-import project6 from "../public/project6.png";
+import project1 from "../public/vibePair.png";
+import project2 from "../public/Task Manajar.png";
+import project3 from "../public/TastyFuud.png";
+import project4 from "../public/WanderLust.png";
+import project5 from "../public/Portfolio.png";
+import project6 from "../public/Weather Forcast.png";
 
 export const projectData = [
   {
     id: 1,
     image: project1,
-    title: "E-Commerce Dashboard",
+    title: "VibePair",
     description:
-      "A comprehensive dashboard for managing online stores with real-time analytics, inventory management, and sales tracking. Built with modern web technologies for optimal performance.",
-    link: "https://github.com/yourusername/ecommerce-dashboard",
-    technologies: ["NextJs", "TypeScript", "PostgreSQL", "Docker", "Drizzle"],
+      "A Tinder/Bumble-style matchmaking app featuring real-time chat, friend requests, profile management, and Cloudinary image uploads. Built using a modern MERN stack.",
+    link: "https://vibepair.online/home",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Cloudinary"],
   },
   {
     id: 2,
     image: project2,
-    title: "AI Content Generator",
+    title: "Task Manager",
     description:
-      "An AI-powered platform that helps create high-quality content using machine learning algorithms. Features include text generation, image creation, and content optimization.",
-    link: "https://github.com/yourusername/ai-content-generator",
-    technologies: ["React", "Python", "TensorFlow", "FastAPI", "Redis"],
+      "A task management system developed as a take-home assignment. Supports user authentication, task CRUD, team collaboration, and dashboard features.",
+    link: "https://task-manajer.netlify.app/",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
     id: 3,
     image: project3,
-    title: "Social Media Analytics",
+    title: "Tatsy Fuud",
     description:
-      "A powerful analytics tool that provides insights into social media performance across multiple platforms. Includes customizable dashboards and automated reporting.",
-    link: "https://github.com/yourusername/social-analytics",
-    technologies: ["Vue.js", "Node.js", "MongoDB", "Express", "D3.js"],
+      "A frontend food delivery application inspired by Swiggy/Zomato. Includes restaurant listings, cart functionality, and routing using Redux and React Router.",
+    link: "https://tasty-fuud1.netlify.app/",
+    technologies: ["React", "Redux", "Tailwind CSS", "React Router"],
   },
   {
     id: 4,
     image: project4,
-    title: "Smart Home Hub",
+    title: "WanderLust (Mini Project)",
     description:
-      "A centralized IoT platform for managing smart home devices. Features include device automation, energy monitoring, and voice control integration.",
-    link: "https://github.com/yourusername/smart-home-hub",
-    technologies: ["React Native", "GraphQL", "AWS IoT", "WebSocket", "Redux"],
+      "A responsive travel website template built with Tailwind CSS, featuring elegant layout and animation. A UI-focused static site to showcase styling skills.",
+    link: "https://github.com/Himanshu-Yadav897/wanderingWorld",
+    technologies: ["HTML", "Tailwind CSS"],
   },
   {
     id: 5,
     image: project5,
-    title: "Fitness Tracker",
+    title: "Portfolio Website",
     description:
-      "A comprehensive fitness tracking application that helps users monitor workouts, nutrition, and progress. Includes AI-powered workout recommendations.",
-    link: "https://github.com/yourusername/fitness-tracker",
-    technologies: ["Flutter", "Firebase", "TensorFlow Lite", "SQLite", "BLoC"],
+      "A personal developer portfolio designed with a modern, colorful aesthetic. Built with React and Tailwind CSS to showcase projects, skills, and contact options.",
+    link: "https://github.com/yourusername/portfolio",
+    technologies: ["React", "Tailwind CSS", "React Router"],
   },
   {
     id: 6,
     image: project6,
-    title: "Task Management System",
+    title: "Weather Forecast App",
     description:
-      "A collaborative project management tool with features like task tracking, team communication, and progress monitoring. Optimized for both small teams and large organizations.",
-    link: "https://github.com/yourusername/task-management",
-    technologies: ["Angular", "NestJS", "PostgreSQL", "RxJS", "Socket.io"],
+      "A simple weather forecast app using OpenWeather API. Users can search any city and get real-time weather details like temperature, humidity, and description.",
+    link: "https://github.com/yourusername/weather-forecast",
+    technologies: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
   },
 ];
