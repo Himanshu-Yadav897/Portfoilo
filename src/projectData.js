@@ -1,4 +1,4 @@
-import project1 from "../public/vibePair.png";
+import project1 from "../public/VibePair.png";
 import project2 from "../public/Task Manajar.png";
 import project3 from "../public/TastyFuud.png";
 import project4 from "../public/WanderLust.png";

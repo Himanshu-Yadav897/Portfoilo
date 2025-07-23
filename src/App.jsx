@@ -1,18 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router";
+import MainLayout from "./components/MainLayout";
+import Home from "./components/Home";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import ProjectTimeline from "./components/ProjectTimeline";
+import MyJourneyPage from "./components/MyJourneyPage";
 
 function App() {
   return (
-    
-    <div className="min-h-screen">
-      <div className="fixed top-0 -z-10 min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,RGB(79,100,229,0.2),rgba(255,255,255,0))]"></div>
-      <Navbar />
-      <About/>
-      <Projects />
-      <Contact />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="project-timeline" element={<ProjectTimeline />} />
+          <Route path="my-journey" element={<MyJourneyPage />} />{" "}
+        </Route>
+      </Routes>
+    </Router>
   );
 }
+
 export default App;
