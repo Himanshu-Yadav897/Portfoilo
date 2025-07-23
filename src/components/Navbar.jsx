@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 w-full backdrop-blur-md bg-black/30 border-b border-gray-700 border-opacity-20 z-50">
-      <nav className="relative max-w-7xl mx-auto py-6 px-6 lg:px-32 flex items-center justify-between text-white overflow-hidden">
+      <nav className="relative max-w-7xl mx-auto py-6 px-6 lg:px-32 flex items-center justify-between text-white ">
         <div className="absolute inset-0 -z-10 h-[72px] overflow-hidden pointer-events-none">
           <BackgroundBeamsWithCollision explodeY={10} />
         </div>
