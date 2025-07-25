@@ -43,6 +43,9 @@ import Razorpay6 from "../../public/Razorpay 6.png";
 import Simon from "../../public/Simon.png";
 import Simon2 from "../../public/Simon 2.png";
 
+import Assignment3 from "../../public/Assignment 3.png";
+import Assignment4 from "../../public/Assignment 4.png";
+
 import Bike from "../../public/Bike.png";
 import Bike2 from "../../public/Bike 2.png";
 import Bike3 from "../../public/Bike 3.png";
@@ -138,6 +141,8 @@ const imgSlide14 = [
   { src: Tinder4 },
 ];
 
+const imgSlide15 = [{ src: Assignment3 }, { src: Assignment4 }];
+
 export const projectData = [
   {
     year: "July 2025",
@@ -152,6 +157,8 @@ export const projectData = [
       "✅ Integrated sections for Projects, Skills, Timeline & Contact",
     ],
     images: imgSlide1,
+    github: "https://github.com/Himanshu-Yadav897/Portfoilo",
+    live: "https://portfolio8971.netlify.app/",
   },
   {
     year: "June 2025",
@@ -166,6 +173,8 @@ export const projectData = [
       "✅ React.js frontend with conditional navbar and dropdown UX",
     ],
     images: imgSlide2,
+    github: "https://github.com/Himanshu-Yadav897/devTinderWeb",
+    live: "https://vibepair.online",
   },
   {
     year: "April 2025",
@@ -179,6 +188,8 @@ export const projectData = [
       "✅ Built using React, Node.js, Express, and MongoDB",
     ],
     images: imgSlide3,
+    github: "https://github.com/Himanshu-Yadav897/task-manager",
+    live: "https://task-manajer.netlify.app/",
   },
   {
     year: "January 2025",
@@ -192,6 +203,8 @@ export const projectData = [
       "✅ Hosted on Netlify; explored CORS handling and Netlify functions",
     ],
     images: imgSlide4,
+    github: "https://github.com/Himanshu-Yadav897/Namaste_React",
+    live: "https://tasty-fuud1.netlify.app/",
   },
   {
     year: "September 2024",
@@ -211,6 +224,8 @@ export const projectData = [
       "✅ Integrated with OpenWeatherMap API using fetch()",
     ],
     images: imgSlide6,
+    github: "https://github.com/Himanshu-Yadav897/WeatherForcast",
+    live: "https://weatherforcast001.netlify.app/",
   },
   {
     year: "August 2024",
@@ -232,6 +247,8 @@ export const projectData = [
       "✅ Built as a UI practice project — no backend or actual matchmaking logic",
     ],
     images: imgSlide14,
+    github: "https://github.com/Himanshu-Yadav897/TinderWeb",
+    live: "https://tinderweb.netlify.app/",
   },
   {
     year: "April 2024",
@@ -253,6 +270,8 @@ export const projectData = [
       "✅ RESTful routing and middleware-based request handling",
     ],
     images: imgSlide5,
+    github: "https://github.com/Himanshu-Yadav897/wanderingWorld",
+    live: "https://github.com/Himanshu-Yadav897/wanderingWorld",
   },
   {
     year: "February 2024",
@@ -268,6 +287,8 @@ export const projectData = [
       "✅ Clean, responsive UI with interactive sliders and toggles",
     ],
     images: imgSlide7,
+    github: "https://github.com/Himanshu-Yadav897/password_generator",
+    live: "https://password00generator.netlify.app/",
   },
   {
     year: "January 2024",
@@ -282,6 +303,8 @@ export const projectData = [
       "✅ Practiced real-world design patterns, including grid and flex systems",
     ],
     images: imgSlide8,
+    github: "https://github.com/Himanshu-Yadav897/RazorPay-Clone",
+    live: "https://razorpayclone0.netlify.app/",
   },
   {
     year: "November 2023",
@@ -295,6 +318,23 @@ export const projectData = [
       "✅ Game restarts on wrong input with visual cue",
     ],
     images: imgSlide9,
+    github: "https://github.com/Himanshu-Yadav897/Simon-Says",
+    live: "https://simon-saays.netlify.app/",
+  },
+  {
+    year: "August 2023",
+    title: "Assignment Test",
+    description:
+      "A responsive static webpage built using Tailwind CSS as part of a PW Skills assignment. Focused on learning utility-first styling, responsive design principles, and clean layout using Tailwind.",
+    Bullet: [
+      "✅ Layout and styling using Tailwind CSS utility classes",
+      "✅ Practiced responsive design with Tailwind's breakpoint system",
+      "✅ Improved understanding of spacing, typography, and layout utilities",
+      "✅ Created as a hands-on assignment for learning purposes",
+    ],
+    images: imgSlide15,
+    github: "https://github.com/Himanshu-Yadav897/Assignment-4",
+    live: "https://assignmen-04.netlify.app/",
   },
   {
     year: "October 2023",
@@ -308,6 +348,8 @@ export const projectData = [
       "✅ Fully functional static page with adaptive sections",
     ],
     images: imgSlide10,
+    github: "https://github.com/Himanshu-Yadav897/BikeLandingPage",
+    live: "https://bikeprojec.netlify.app/",
   },
   {
     year: "September 2023",
@@ -321,6 +363,8 @@ export const projectData = [
       "✅ Highlights key features, specifications, and call-to-action",
     ],
     images: imgSlide11,
+    github: "https://github.com/Himanshu-Yadav897/EGuru-Landing-page",
+    live: "https://e-guru-landing.netlify.app/",
   },
   {
     year: "August 2023",
@@ -334,6 +378,8 @@ export const projectData = [
       "✅ Created solely for testing and hands-on practice",
     ],
     images: imgSlide12,
+    github: "https://github.com/Himanshu-Yadav897/Assignment-2",
+    live: "https://assignment-0002.netlify.app/",
   },
   {
     year: "August 2023",
@@ -347,5 +393,7 @@ export const projectData = [
       "✅ Created solely for testing and hands-on practice",
     ],
     images: imgSlide13,
+    github: "https://github.com/Himanshu-Yadav897/Genius-Clone",
+    live: "https://assignment-000003.netlify.app/",
   },
 ];
