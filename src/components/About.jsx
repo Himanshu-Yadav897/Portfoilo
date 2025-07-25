@@ -5,7 +5,7 @@ import image from "../../public/image 1.jpg";
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { FollowerPointerCard } from "../ui/following-pointer";
-import { Link } from "react-router"; // Use react-router-dom for Link
+import { Link } from "react-router"; 
 
 const About = () => {
   // Check if story has been seen before
