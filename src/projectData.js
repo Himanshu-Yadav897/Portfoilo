@@ -36,11 +36,11 @@ export const projectData = [
   {
     id: 4,
     image: project4,
-    title: "WanderLust (Mini Project)",
+    title: "WanderLust",
     description:
-      "A responsive travel website template built with Tailwind CSS, featuring elegant layout and animation. A UI-focused static site to showcase styling skills.",
+      "A full-stack travel blog platform built using Node.js, Express, MongoDB, and EJS. Designed for managing travel destinations with full CRUD functionality and server-side rendering.",
     link: "https://github.com/Himanshu-Yadav897/wanderingWorld",
-    technologies: ["HTML", "Tailwind CSS"],
+    technologies: ["Node.js", "Express", "MongoDB", "EJS"],
   },
   {
     id: 5,

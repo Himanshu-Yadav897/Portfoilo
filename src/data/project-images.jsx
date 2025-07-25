@@ -322,7 +322,7 @@ export const projectData = [
     live: "https://simon-saays.netlify.app/",
   },
   {
-    year: "August 2023",
+    year: "November 2023",
     title: "Assignment Test",
     description:
       "A responsive static webpage built using Tailwind CSS as part of a PW Skills assignment. Focused on learning utility-first styling, responsive design principles, and clean layout using Tailwind.",
