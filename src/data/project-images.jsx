@@ -43,8 +43,8 @@ import Razorpay6 from "../../public/Razorpay 6.png";
 import Simon from "../../public/Simon.png";
 import Simon2 from "../../public/Simon 2.png";
 
-import Assignment3 from "../../public/Assignment 3.png";
-import Assignment4 from "../../public/Assignment 4.png";
+import Assignment3 from "../../public/assignment 3.png";
+import Assignment4 from "../../public/assignment 4.png";
 
 import Bike from "../../public/Bike.png";
 import Bike2 from "../../public/Bike 2.png";
