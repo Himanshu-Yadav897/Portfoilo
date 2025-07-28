@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router";
 import { BiMenu } from "react-icons/bi";
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
-import GooeyNav from "../ui/GooeyNav"
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

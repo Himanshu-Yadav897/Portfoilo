@@ -36,6 +36,7 @@ const Projects = () => {
           >
             <img
               src={project.image}
+              loading="lazy"
               className="hover:scale-105 transition-transform duration-300 w-full h-56 object-cover"
               alt={project.title}
             />
