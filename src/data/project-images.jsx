@@ -1,71 +1,71 @@
 // src/components/data/project-images.jsx
-import Portfolio from "../../public/Portfolio.png";
-import Portfolio2 from "../../public/Portfolio 2.png";
+import Portfolio from "../../public/Portfolio.webp";
+import Portfolio2 from "../../public/Portfolio 2.webp";
 
-import VibePair from "../../public/VibePair.png";
-import VibePair2 from "../../public/VibePair 2.png";
-import VibePair3 from "../../public/VibePair 3.png";
-import VibePair4 from "../../public/VibePair 4.png";
-import VibePair5 from "../../public/VibePair 5.png";
-import VibePair6 from "../../public/VibePair 6.png";
+import VibePair from "../../public/VibePair.webp";
+import VibePair2 from "../../public/VibePair 2.webp";
+import VibePair3 from "../../public/VibePair 3.webp";
+import VibePair4 from "../../public/VibePair 4.webp";
+import VibePair5 from "../../public/VibePair 5.webp";
+import VibePair6 from "../../public/VibePair 6.webp";
 
-import Task1 from "../../public/Task Manajar.png";
-import Task2 from "../../public/Task Manajar 2.png";
-import Task3 from "../../public/Task Manajar 3.png";
-import Task4 from "../../public/Task Manajar 4.png";
+import Task1 from "../../public/Task Manajar.webp";
+import Task2 from "../../public/Task Manajar 2.webp";
+import Task3 from "../../public/Task Manajar 3.webp";
+import Task4 from "../../public/Task Manajar 4.webp";
 
-import Tasty from "../../public/TastyFuud.png";
-import Tasty2 from "../../public/TastyFuud 2.png";
-import Tasty3 from "../../public/TastyFuud 3.png";
-import Tasty4 from "../../public/TastyFuud 4.png";
+import Tasty from "../../public/TastyFuud.webp";
+import Tasty2 from "../../public/TastyFuud 2.webp";
+import Tasty3 from "../../public/TastyFuud 3.webp";
+import Tasty4 from "../../public/TastyFuud 4.webp";
 
-import WanderLust from "../../public/WanderLust.png";
-import WanderLust2 from "../../public/WanderLust 2.png";
-import WanderLust3 from "../../public/WanderLust 3.png";
-import WanderLust4 from "../../public/WanderLust 4.png";
+import WanderLust from "../../public/WanderLust.webp";
+import WanderLust2 from "../../public/WanderLust 2.webp";
+import WanderLust3 from "../../public/WanderLust 3.webp";
+import WanderLust4 from "../../public/WanderLust 4.webp";
 
-import Weather from "../../public/Weather Forcast.png";
-import Weather2 from "../../public/Weather Forcast 2.png";
-import Weather3 from "../../public/Weather Forcast 3.png";
-import Weather4 from "../../public/Weather Forcast 4.png";
+import Weather from "../../public/Weather Forcast.webp";
+import Weather2 from "../../public/Weather Forcast 2.webp";
+import Weather3 from "../../public/Weather Forcast 3.webp";
+import Weather4 from "../../public/Weather Forcast 4.webp";
 
-import Password from "../../public/Password.png";
-import Password2 from "../../public/Password 2.png";
-import Password3 from "../../public/Password 3.png";
+import Password from "../../public/Password.webp";
+import Password2 from "../../public/Password 2.webp";
+import Password3 from "../../public/Password 3.webp";
 
-import Razorpay from "../../public/Razorpay.png";
-import Razorpay2 from "../../public/Razorpay 2.png";
-import Razorpay3 from "../../public/Razorpay 3.png";
-import Razorpay4 from "../../public/Razorpay 4.png";
-import Razorpay5 from "../../public/Razorpay 5.png";
-import Razorpay6 from "../../public/Razorpay 6.png";
+import Razorpay from "../../public/Razorpay.webp";
+import Razorpay2 from "../../public/Razorpay 2.webp";
+import Razorpay3 from "../../public/Razorpay 3.webp";
+import Razorpay4 from "../../public/Razorpay 4.webp";
+import Razorpay5 from "../../public/Razorpay 5.webp";
+import Razorpay6 from "../../public/Razorpay 6.webp";
 
-import Simon from "../../public/Simon.png";
-import Simon2 from "../../public/Simon 2.png";
+import Simon from "../../public/Simon.webp";
+import Simon2 from "../../public/Simon 2.webp";
 
-import Assignment3 from "../../public/assignment 3.png";
-import Assignment4 from "../../public/assignment 4.png";
+import Assignment3 from "../../public/assignment 3.webp";
+import Assignment4 from "../../public/assignment 4.webp";
 
-import Bike from "../../public/Bike.png";
-import Bike2 from "../../public/Bike 2.png";
-import Bike3 from "../../public/Bike 3.png";
-import Bike4 from "../../public/Bike 4.png";
-import Bike5 from "../../public/Bike 5.png";
-import Bike6 from "../../public/Bike 6.png";
-import Bike7 from "../../public/Bike 7.png";
+import Bike from "../../public/Bike.webp";
+import Bike2 from "../../public/Bike 2.webp";
+import Bike3 from "../../public/Bike 3.webp";
+import Bike4 from "../../public/Bike 4.webp";
+import Bike5 from "../../public/Bike 5.webp";
+import Bike6 from "../../public/Bike 6.webp";
+import Bike7 from "../../public/Bike 7.webp";
 
-import Eguru from "../../public/Eguru.png";
-import Eguru2 from "../../public/Eguru 2.png";
+import Eguru from "../../public/Eguru.webp";
+import Eguru2 from "../../public/Eguru 2.webp";
 
-import Assignment1 from "../../public/Assignment 1.png";
-import Assignment2 from "../../public/Assignment 2.png";
+import Assignment1 from "../../public/Assignment 1.webp";
+import Assignment2 from "../../public/Assignment 2.webp";
 
-import Genius from "../../public/Genius Clone.png";
+import Genius from "../../public/Genius Clone.webp";
 
-import Tinder from "../../public/TinderWeb .png";
-import Tinder2 from "../../public/TinderWeb 2.png";
-import Tinder3 from "../../public/TinderWeb 3.png";
-import Tinder4 from "../../public/TinderWeb 4.png";
+import Tinder from "../../public/TinderWeb .webp";
+import Tinder2 from "../../public/TinderWeb 2.webp";
+import Tinder3 from "../../public/TinderWeb 3.webp";
+import Tinder4 from "../../public/TinderWeb 4.webp";
 
 const imgSlide1 = [{ src: Portfolio }, { src: Portfolio2 }];
 

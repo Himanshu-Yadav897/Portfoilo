@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 import { SiLeetcode } from "react-icons/si";
-import image from "../../public/image 1.jpg";
+
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { FollowerPointerCard } from "../ui/following-pointer";

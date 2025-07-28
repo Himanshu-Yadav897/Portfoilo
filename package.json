@@ -17,6 +17,7 @@
     "framer-motion": "^12.5.0",
     "gsap": "^3.13.0",
     "motion": "^12.23.6",
+    "partycles": "^1.2.6",
     "qss": "^3.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

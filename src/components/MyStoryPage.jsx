@@ -6,7 +6,7 @@ const StickyTextReveal = ({ children, className = "", height = "100vh" }) => {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 0.3", "end 0.7"],
+    offset: ["start 0.5", "end 0.5"],
   });
 
   if (typeof children !== "string") {
@@ -126,7 +126,7 @@ const HimanshuStoryPage = () => {
     "The Copy-Paste Dream",
     "The ₹27,000 Lesson",
     "Taking It Personally",
-    "6-7 Hours a Day",
+    "Persistence over perfection",
     "The DSA Struggle",
     "Building Real Things",
     "Becoming Great",
@@ -136,7 +136,7 @@ const HimanshuStoryPage = () => {
   useEffect(() => {
     const updateChapter = () => {
       const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
+      const windowHeight = 2.25 * window.innerHeight;
       const chapterIndex = Math.floor(scrollPosition / windowHeight);
       setCurrentChapter(Math.min(chapterIndex, chapters.length - 1));
     };
@@ -191,7 +191,7 @@ const HimanshuStoryPage = () => {
           />
 
           <TextReveal
-            text="What do you want to be when you grow up?"
+            text='"What do you want to be when you grow up?"'
             className="text-blue-400 text-2xl md:text-3xl font-semibold italic"
             delay={0.3}
           />
@@ -203,7 +203,7 @@ const HimanshuStoryPage = () => {
           />
 
           <TextReveal
-            text="Software Developer, like my uncle."
+            text='"Software Engineer, like my uncle."'
             className="text-green-400 text-xl md:text-2xl"
             delay={1}
           />
@@ -331,7 +331,7 @@ const HimanshuStoryPage = () => {
           </motion.h1>
 
           <TextReveal
-            text="When the startup failed,"
+            text="When everything fell apart,"
             className="text-gray-300"
           />
 
@@ -387,7 +387,7 @@ const HimanshuStoryPage = () => {
           >
             <div className="text-6xl md:text-8xl">📚</div>
             <p className="text-blue-400 mt-4 font-medium">
-              Time to prove them wrong
+              I’ll prove it. Not to them — to myself.
             </p>
           </motion.div>
         </div>
@@ -402,7 +402,7 @@ const HimanshuStoryPage = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent"
           >
-            Chapter 4: 6-7 Hours a Day
+            Chapter 4: Persistence Over Perfection
           </motion.h1>
 
           <TextReveal
@@ -461,9 +461,9 @@ const HimanshuStoryPage = () => {
             transition={{ delay: 0.5, duration: 1 }}
             className="pt-8"
           >
-            <div className="text-6xl md:text-8xl">💪</div>
+            {/* <div className="text-6xl md:text-8xl">💪</div> */}
             <p className="text-green-400 mt-4 font-medium">
-              Persistence over perfection
+              Every return was a victory.
             </p>
           </motion.div>
         </div>
@@ -505,10 +505,11 @@ const HimanshuStoryPage = () => {
           />
 
           <StickyTextReveal
-            className="text-purple-400 text-xl md:text-2xl lg:text-3xl"
+            className="text-purple-400 text-2xl md:text-3xl lg:text-5xl"
             height="h-[75vh]"
           >
-            Arrays, recursion, dynamic programming — it all felt like a wall. But I kept climbing.
+            Arrays, recursion, dynamic programming — it all felt like a wall.
+            But I kept climbing.
           </StickyTextReveal>
 
           <div className="py-4 space-y-4">
@@ -557,12 +558,18 @@ const HimanshuStoryPage = () => {
           </motion.h1>
 
           <TextReveal
-            text="And now, I'm building real projects,"
+            text="Today, I’m finally doing what I always wanted to do:"
             className="text-blue-400 text-xl"
           />
 
           <TextReveal
-            text="helping others debug,"
+            text="Building real things."
+            className="text-red-400"
+            delay={0.5}
+          />
+
+          <TextReveal
+            text="Debugging for others."
             className="text-green-400"
             delay={0.5}
           />
@@ -620,7 +627,8 @@ const HimanshuStoryPage = () => {
 
           <div className="py-6">
             <TextReveal
-              text="Because I'm not just here to be a developer."
+              // text="Because I'm not just here to be a developer."
+              text="Because I’m not here just to “get a job.”"
               className="text-gray-300 text-xl"
               delay={1.5}
             />
@@ -628,7 +636,7 @@ const HimanshuStoryPage = () => {
               className="text-cyan-400 text-2xl md:text-3xl lg:text-4xl font-bold"
               height="h-[70vh]"
             >
-              I'm here to become a great one.
+              I’m here to become great at what I do.
             </StickyTextReveal>
           </div>
 
@@ -651,15 +659,22 @@ const HimanshuStoryPage = () => {
               The story continues...
             </p>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Every line of code, every debugging session, every small victory — 
+              Every line of code, every debugging session, every small victory —
               it's all part of raising the bar to become a better developer.
             </p>
 
+            <p className="text-bold text-amber-50 text-lg max-w-2xl mx-auto">
+              And if you’ve made it this far — maybe you’re not here by
+              accident.
+              <br />
+              You’ve read my story—now let’s write the next chapter together.
+            </p>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+              <button className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-blue-400 hover:text-black transition-all duration-300 cursor-pointer">
                 See My Work
               </button>
-              <button className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-blue-400 hover:text-black transition-all duration-300">
+              <button className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-blue-400 hover:text-black transition-all duration-300 cursor-pointer">
                 Let's Connect
               </button>
             </div>
