@@ -1,7 +1,9 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router";
 import { BiMenu } from "react-icons/bi";
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
+import GooeyNav from "../ui/GooeyNav"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +37,7 @@ const Navbar = () => {
             <Link to="/project-timeline">Project Timeline</Link>
           </li>
           <li className="opacity-70 hover:opacity-100 transition-opacity duration-300">
-            <Link to="/my-journey">My Journey</Link>
+            <Link to="/my-story">My Story</Link>
           </li>
         </ul>
 

@@ -17,7 +17,7 @@ export const journeyData = [
   {
     id: 3,
     year: "2023",
-    title: "The Gauntlet Thrown: Proving Them Wrong 😤",
+    title: " Proving Them Wrong 😤",
     description:
       "Dismissed by friends as 'just a BCA student' not meant for coding, I took every word personally. I stopped talking, found a library, and buried myself in code for 6-7 hours a day, beginning my deep dive into DSA and Web Development (Apna College's Alpha Plus batch).",
   },

@@ -5,7 +5,8 @@ import image from "../../public/image 1.jpg";
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import { FollowerPointerCard } from "../ui/following-pointer";
-import { Link } from "react-router"; 
+import TextType from "../ui/TextType";
+import { Link } from "react-router";
 
 const About = () => {
   // Check if story has been seen before
@@ -166,7 +167,17 @@ const About = () => {
               </h1>
 
               <h3 className="text-xl md:text-2xl lg:text-3xl font-light text-center md:text-left bg-gradient-to-r from-blue-400 via-sky-400 to-blue-600 text-transparent bg-clip-text">
-                Full-Stack Developer
+                <TextType
+                  text={[
+                    "Software Developer",
+                    "Full Stack Developer",
+                    "MERN Stack Developer",
+                  ]}
+                  typingSpeed={75}
+                  pauseDuration={1500}
+                  showCursor={true}
+                  cursorCharacter="|"
+                />
               </h3>
 
               {/* Updated tagline */}
@@ -193,7 +204,7 @@ const About = () => {
                 </p>
 
                 <Link
-                  to="/my-journey"
+                  to="/my-story"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25"
                 >
                   Read the Full Story

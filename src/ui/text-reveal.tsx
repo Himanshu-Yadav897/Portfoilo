@@ -9,7 +9,7 @@ export interface TextRevealProps extends ComponentPropsWithoutRef<"div"> {
   children: string;
 }
 
-export const TextReveal: FC<TextRevealProps> = ({ children, className }) => {
+export const TextReveal1: FC<TextRevealProps> = ({ children, className }) => {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,

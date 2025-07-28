@@ -3,8 +3,8 @@ import React from "react";
 import { motion } from "framer-motion"; // Correct import for Framer Motion
 import { journeyData } from "../data/journeyData";
 import { Timeline } from "../ui/timeline"; // Assuming this is your timeline UI component
-import { HyperText } from "../ui/hyper-text"; // Assuming this is for gradient text
-// import Carousel from "../ui/carousel"; // Keep commented if not immediately using
+
+
 
 export default function JourneyTimeline() {
   const data = journeyData.map((item) => ({
@@ -19,9 +19,9 @@ export default function JourneyTimeline() {
         className="p-6 md:p-8 rounded-xl bg-zinc-800/60 backdrop-blur-sm shadow-2xl border border-zinc-700 relative overflow-hidden group cursor-pointer" // Added group & cursor-pointer
       >
         <h3 className="mb-4 text-xl md:text-2xl font-bold text-center">
-          <HyperText className="inline-block bg-gradient-to-r from-blue-400 via-sky-300 to-purple-400 bg-clip-text text-transparent">
+          <span className="inline-block bg-gradient-to-r from-blue-400 via-sky-300 to-purple-400 bg-clip-text text-transparent">
             {item.title}
-          </HyperText>
+          </span>
         </h3>
 
         {/* The overlay that hides the text */}
