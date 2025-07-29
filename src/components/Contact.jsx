@@ -343,7 +343,7 @@ const Contact = () => {
             </motion.a>
 
             <motion.a
-              href="https://drive.google.com/file/d/1eSMqMSGHPShHOx6JRHyiuB4L0nKZEhl7/view?usp=sharing" // Add your resume link
+              href="https://drive.google.com/file/d/1JW8gun-X80HVl5KXIro8tXNM9-AESP0d/view?usp=sharing" 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-3 bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 border border-white/20 backdrop-blur-lg"

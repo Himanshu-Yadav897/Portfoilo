@@ -196,7 +196,7 @@ const Navbar = () => {
             className="ml-4"
           >
             <motion.a
-              href="https://drive.google.com/file/d/1eSMqMSGHPShHOx6JRHyiuB4L0nKZEhl7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1JW8gun-X80HVl5KXIro8tXNM9-AESP0d/view?usp=sharing"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 text-white px-4 py-2 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-500/25"
@@ -313,7 +313,7 @@ const Navbar = () => {
                     {/* Mobile CTA */}
                     <motion.div variants={menuItemVariants} className="pt-4">
                       <a
-                        href="https://drive.google.com/file/d/1eSMqMSGHPShHOx6JRHyiuB4L0nKZEhl7/view?usp=sharing" // Add your resume link
+                        href="https://drive.google.com/file/d/1JW8gun-X80HVl5KXIro8tXNM9-AESP0d/view?usp=sharing" // Add your resume link
                         className="flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-white p-4 rounded-xl font-medium transition-all duration-300 hover:from-blue-500 hover:via-sky-400 hover:to-blue-300"
                         onClick={() => setIsMenuOpen(false)}
                       >
