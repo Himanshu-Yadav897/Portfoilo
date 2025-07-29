@@ -207,7 +207,7 @@ const Projects = () => {
                     className="w-full h-full object-cover"
                   />
 
-                  {/* Overlay with Action Buttons */}
+                  {/* Overlay with Action Buttons - Fixed pointer events */}
                   <AnimatePresence>
                     {hoveredProject === project.id && (
                       <motion.div
@@ -215,7 +215,7 @@ const Projects = () => {
                         initial="hidden"
                         animate="visible"
                         exit="hidden"
-                        className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center gap-4"
+                        className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center gap-4 pointer-events-auto"
                       >
                         <motion.a
                           href={project.githubLink}
@@ -223,7 +223,7 @@ const Projects = () => {
                           rel="noopener noreferrer"
                           whileHover={{ scale: 1.1, rotate: 5 }}
                           whileTap={{ scale: 0.9 }}
-                          className="bg-slate-800/80 hover:bg-slate-700/80 p-3 rounded-full transition-all duration-300 group/btn border border-blue-500/20"
+                          className="bg-slate-800/80 hover:bg-slate-700/80 p-3 rounded-full transition-all duration-300 group/btn border border-blue-500/20 pointer-events-auto"
                         >
                           <Github className="w-6 h-6 text-blue-200 group-hover/btn:text-sky-300 transition-colors" />
                         </motion.a>
@@ -233,7 +233,7 @@ const Projects = () => {
                           rel="noopener noreferrer"
                           whileHover={{ scale: 1.1, rotate: -5 }}
                           whileTap={{ scale: 0.9 }}
-                          className="bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 p-3 rounded-full transition-all duration-300 group/btn shadow-lg shadow-blue-500/25"
+                          className="bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 p-3 rounded-full transition-all duration-300 group/btn shadow-lg shadow-blue-500/25 pointer-events-auto"
                         >
                           <ExternalLink className="w-6 h-6 text-white group-hover/btn:text-blue-50 transition-colors" />
                         </motion.a>
@@ -250,7 +250,7 @@ const Projects = () => {
                       type: "spring",
                       stiffness: 200,
                     }}
-                    className="absolute top-4 left-4 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-white text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/30"
+                    className="absolute top-4 left-4 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-white text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/30 pointer-events-none"
                   >
                     {String(index + 1).padStart(2, "0")}
                   </motion.div>
@@ -283,17 +283,18 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  {/* Action Links */}
-                  <div className="flex gap-3 pt-4">
+                  {/* Action Links - Fixed z-index and pointer events */}
+                  <div className="flex gap-3 pt-4 relative z-10">
                     <motion.a
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05, x: 5 }}
                       whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-2 px-4 py-2 bg-slate-800/70 hover:bg-slate-700/80 text-blue-200 rounded-lg transition-all duration-300 text-sm group/link border border-blue-500/20"
+                      className="flex items-center gap-2 px-4 py-2 bg-slate-800/70 hover:bg-slate-700/80 text-blue-200 rounded-lg transition-all duration-300 text-sm group/link border border-blue-500/20 cursor-pointer pointer-events-auto relative z-20"
+                      style={{ pointerEvents: 'auto' }}
                     >
-                      <Code className="w-4 h-4 group-hover/link:rotate-12 transition-transform" />
+                      <Code className="w-4 h-4 group-hover/link:rotate-12 cursor-pointer transition-transform" />
                       Code
                     </motion.a>
                     <motion.a
@@ -302,7 +303,8 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05, x: 5 }}
                       whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 text-white rounded-lg transition-all duration-300 text-sm group/link shadow-lg shadow-blue-500/25"
+                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 text-white rounded-lg transition-all duration-300 text-sm group/link shadow-lg shadow-blue-500/25 cursor-pointer pointer-events-auto relative z-20"
+                      style={{ pointerEvents: 'auto' }}
                     >
                       <Eye className="w-4 h-4 group-hover/link:scale-110 transition-transform" />
                       Live Demo

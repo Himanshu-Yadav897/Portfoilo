@@ -57,6 +57,12 @@ const Navbar = () => {
       description: "Personal journey",
     },
     {
+      to: "/my-education",
+      label: "Education",
+      icon: <MessageCircle size={16} />,
+      description: "See my Education",
+    },
+    {
       to: "/contact",
       label: "Contact",
       icon: <MessageCircle size={16} />,
@@ -190,7 +196,7 @@ const Navbar = () => {
             className="ml-4"
           >
             <motion.a
-              href="https://drive.google.com/file/d/1eSMqMSGHPShHOx6JRHyiuB4L0nKZEhl7/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1eSMqMSGHPShHOx6JRHyiuB4L0nKZEhl7/view?usp=sharing"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 text-white px-4 py-2 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-500/25"
@@ -252,7 +258,7 @@ const Navbar = () => {
                 className="absolute top-0 left-0 right-0 bg-gradient-to-br from-gray-900 via-blue-900/20 to-blue-800/20 backdrop-blur-xl border-b border-blue-400/30"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="pt-20 pb-8 px-6">
+                <div className="pt-20 pb-8 px-6 bg-blue-950  ">
                   {/* Mobile Menu Header */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}

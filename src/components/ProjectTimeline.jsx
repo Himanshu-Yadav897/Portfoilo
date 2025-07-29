@@ -119,7 +119,7 @@ export default function ProjectTimeline() {
               
               <div className="pt-4">
                 <div className="p-4 bg-gradient-to-br from-blue-900/20 to-sky-900/20 rounded-lg border border-blue-500/20 hover:border-blue-400/30 transition-colors duration-200">
-                  <p className="text-xs text-blue-200/70 italic">
+                  <p className="text-sm text-blue-200/70 italic">
                     "{item.reflection}"
                   </p>
                 </div>

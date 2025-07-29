@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ProjectTimeline from "./components/ProjectTimeline";
+import EducationSection from "./components/Education";
 
 import MyStoryPage from "./components/MyStoryPage";
 
@@ -18,7 +19,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path="project-timeline" element={<ProjectTimeline />} />
-
+          <Route path="my-education" element={<EducationSection />} />
           <Route path="my-story" element={<MyStoryPage />} />
         </Route>
       </Routes>

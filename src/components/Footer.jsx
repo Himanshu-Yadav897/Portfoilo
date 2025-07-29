@@ -80,7 +80,8 @@ const Footer = () => {
     { to: "/projects", label: "Projects" },
     { to: "/project-timeline", label: "Timeline" },
     { to: "/my-story", label: "My Story" },
-    { to: "#contact", label: "Contact", external: true },
+    { to: "/my-education", label: "Education" },
+    { to: "/contact", label: "Contact", external: true },
   ];
 
   const skills = [
