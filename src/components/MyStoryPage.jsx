@@ -668,20 +668,25 @@ const HimanshuStoryPage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <motion.button 
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-gradient-to-r hover:from-blue-600 hover:via-sky-500 hover:to-blue-400 hover:text-white hover:border-transparent transition-all duration-300 cursor-pointer shadow-lg shadow-blue-500/25"
-              >
-                See My Work
-              </motion.button>
-              <motion.button 
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-white rounded-lg font-medium hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 transition-all duration-300 cursor-pointer shadow-lg shadow-blue-500/25"
-              >
-                Let's Connect
-              </motion.button>
+              <a href="/projects">
+                <motion.button
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-gradient-to-r hover:from-blue-600 hover:via-sky-500 hover:to-blue-400 hover:text-white hover:border-transparent transition-all duration-300 cursor-pointer shadow-lg shadow-blue-500/25"
+                >
+                  See My Work
+                </motion.button>
+              </a>
+
+              <a href="/contact">
+                <motion.button
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-3 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-white rounded-lg font-medium hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 transition-all duration-300 cursor-pointer shadow-lg shadow-blue-500/25"
+                >
+                  Let's Connect
+                </motion.button>
+              </a>
             </div>
           </motion.div>
         </div>
