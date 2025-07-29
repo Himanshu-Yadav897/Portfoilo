@@ -24,7 +24,7 @@ const About = () => {
   const storyLines = [
     "When I was in 2nd grade, our teacher asked:",
     '"What do you want to be when you grow up?"',
-    "My best friend said, 'Software Developer, like my uncle.'",
+    "My best friend said, 'Software Engineer, like my uncle.'",
     "I copied his answer — and somehow, that word stuck with me.",
     "Little did I know, this copy-paste moment would change everything.",
   ];
@@ -99,7 +99,7 @@ const About = () => {
             <motion.span
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="px-3 py-1 text-xs font-mono bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full"
+              className="px-3 py-1 text-xs font-mono bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-white rounded-full shadow-lg shadow-blue-500/25"
             >
               Chapter 1: The Copy-Paste Dream
             </motion.span>
@@ -110,7 +110,7 @@ const About = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 onClick={skipToEnd}
-                className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded-md hover:bg-gray-600 transition-colors"
+                className="px-2 py-1 text-xs bg-slate-700/80 text-blue-200 rounded-md hover:bg-slate-600/80 transition-colors border border-blue-500/20"
               >
                 Skip →
               </motion.button>
@@ -122,7 +122,7 @@ const About = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 onClick={replayStory}
-                className="px-2 py-1 text-xs bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors flex items-center gap-1"
+                className="px-2 py-1 text-xs bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-white rounded-md hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 transition-all duration-300 flex items-center gap-1 shadow-lg shadow-blue-500/25"
               >
                 🔄 Replay
               </motion.button>
@@ -140,8 +140,8 @@ const About = () => {
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   className={`text-lg md:text-xl text-center md:text-left mb-2 ${
                     index === 1
-                      ? "text-blue-400 font-semibold italic"
-                      : "text-gray-300"
+                      ? "text-sky-400 font-semibold italic"
+                      : "text-blue-200"
                   } ${index === 4 ? "mt-4 text-blue-300 font-medium" : ""}`}
                 >
                   {line}
@@ -158,7 +158,7 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="flex flex-col items-center md:items-start gap-3 mt-6"
             >
-              <span className="px-2 py-1 text-white bg-zinc-800 rounded-md">
+              <span className="px-2 py-1 text-white bg-gradient-to-r from-blue-600/20 via-sky-500/20 to-blue-400/20 rounded-md border border-blue-500/30 backdrop-blur-sm">
                 Open to Work
               </span>
 
@@ -185,7 +185,7 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
-                className="text-base text-gray-400 font-medium italic text-center md:text-left"
+                className="text-base text-blue-200/80 font-medium italic text-center md:text-left"
               >
                 From copying answers to creating solutions.
               </motion.p>
@@ -197,7 +197,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 1 }}
                 className="mt-4 text-center md:text-left"
               >
-                <p className="text-sm text-slate-400 mb-4">
+                <p className="text-sm text-blue-200/70 mb-4">
                   That 2nd-grade moment was just the beginning. The real story
                   involves ₹27,000 mistakes, library sessions, and proving
                   doubters wrong.
@@ -205,7 +205,7 @@ const About = () => {
 
                 <Link
                   to="/my-story"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-white font-medium hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-500/25"
                 >
                   Read the Full Story
                   <span className="text-xl">→</span>
@@ -219,21 +219,21 @@ const About = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <BiLogoGithub className="text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-indigo-500 hover:rotate-12 transition-all duration-300 ease-in-out" />
+                  <BiLogoGithub className="text-2xl md:text-3xl text-blue-200 cursor-pointer hover:scale-110 hover:text-sky-400 hover:rotate-12 transition-all duration-300 ease-in-out" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/himanshu-yadav-897433-/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <BiLogoLinkedin className="text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-blue-500 hover:rotate-12 transition-all duration-300 ease-in-out" />
+                  <BiLogoLinkedin className="text-2xl md:text-3xl text-blue-200 cursor-pointer hover:scale-110 hover:text-blue-400 hover:rotate-12 transition-all duration-300 ease-in-out" />
                 </a>
                 <a
                   href="https://leetcode.com/u/himanshu_897/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SiLeetcode className="text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-yellow-400 hover:-rotate-12 transition-all duration-300 ease-in-out" />
+                  <SiLeetcode className="text-2xl md:text-3xl text-blue-200 cursor-pointer hover:scale-110 hover:text-sky-300 hover:-rotate-12 transition-all duration-300 ease-in-out" />
                 </a>
               </div>
             </motion.div>

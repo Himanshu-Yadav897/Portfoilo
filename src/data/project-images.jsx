@@ -1,4 +1,21 @@
 // src/components/data/project-images.jsx
+// logos
+import { BiLogoReact } from "react-icons/bi";
+import { BiLogoJavascript } from "react-icons/bi";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoAws } from "react-icons/bi";
+import { BiLogoNodejs } from "react-icons/bi";
+import { BiLogoMongodb } from "react-icons/bi";
+import { SiExpress } from "react-icons/si";
+import { BiLogoRedux } from "react-icons/bi";
+import { SiCloudinary } from "react-icons/si";
+import { BiLogoGithub } from "react-icons/bi";
+import { BiLogoHtml5 } from "react-icons/bi";
+import { SiMongoose } from "react-icons/si";
+import { SiEjs } from "react-icons/si";
+
+import { BiLogoCss3 } from "react-icons/bi";
+
 import Portfolio from "../../public/Portfolio.webp";
 import Portfolio2 from "../../public/Portfolio 2.webp";
 
@@ -159,6 +176,15 @@ export const projectData = [
     images: imgSlide1,
     github: "https://github.com/Himanshu-Yadav897/Portfoilo",
     live: "https://portfolio8971.netlify.app/",
+    tech: [
+      { icon: <BiLogoReact />, color: "blue", label: "React" },
+      { icon: <BiLogoJavascript />, color: "sky", label: "JavaScript" },
+      { icon: <BiLogoRedux />, color: "purple", label: "Redux" },
+      { icon: <BiLogoTailwindCss />, color: "indigo", label: "Tailwind CSS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Learned libraries like Aeternity UI and MagicUI, how to tell a story through design, and how to add depth using Framer Motion.",
   },
   {
     year: "June 2025",
@@ -175,6 +201,19 @@ export const projectData = [
     images: imgSlide2,
     github: "https://github.com/Himanshu-Yadav897/devTinderWeb",
     live: "https://vibepair.online",
+    tech: [
+      { icon: <BiLogoReact />, color: "sky", label: "React" },
+      { icon: <BiLogoJavascript />, color: "amber", label: "JavaScript" },
+      { icon: <BiLogoNodejs />, color: "emerald", label: "Node.js" },
+      { icon: <SiExpress />, color: "pink", label: "Express.js" },
+      { icon: <BiLogoMongodb />, color: "teal", label: "MongoDB" },
+      { icon: <BiLogoTailwindCss />, color: "indigo", label: "Tailwind CSS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+      { icon: <SiCloudinary />, color: "rose", label: "Cloudinary" },
+      { icon: <BiLogoAws />, color: "sky", label: "AWS" },
+    ],
+    reflection:
+      "This was my most valuable project — I learned full backend integration, Cloudinary image handling, and overall app optimization. It took more than 2 months to complete.",
   },
   {
     year: "April 2025",
@@ -190,6 +229,17 @@ export const projectData = [
     images: imgSlide3,
     github: "https://github.com/Himanshu-Yadav897/task-manager",
     live: "https://task-manajer.netlify.app/",
+    tech: [
+      { icon: <BiLogoReact />, color: "sky", label: "React" },
+      { icon: <BiLogoJavascript />, color: "amber", label: "JavaScript" },
+      { icon: <BiLogoNodejs />, color: "emerald", label: "Node.js" },
+      { icon: <SiExpress />, color: "teal", label: "Express.js" },
+      { icon: <BiLogoMongodb />, color: "pink", label: "MongoDB" },
+      { icon: <BiLogoTailwindCss />, color: "indigo", label: "Tailwind CSS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Gained experience with JWT authentication, protected routes, and implemented basic CRUD operations effectively.",
   },
   {
     year: "January 2025",
@@ -205,18 +255,21 @@ export const projectData = [
     images: imgSlide4,
     github: "https://github.com/Himanshu-Yadav897/Namaste_React",
     live: "https://tasty-fuud1.netlify.app/",
+    tech: [
+      { icon: <BiLogoReact />, color: "sky", label: "React" },
+      { icon: <BiLogoJavascript />, color: "amber", label: "JavaScript" },
+      { icon: <BiLogoRedux />, color: "purple", label: "Redux" },
+      { icon: <BiLogoTailwindCss />, color: "indigo", label: "Tailwind CSS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "This was the project where I learned React in depth — from Redux to React Router — and most importantly, how to read and use documentation effectively.",
   },
   {
     year: "September 2024",
     title: "Weather Forecast App",
     description:
-      " A responsive weather forecast web application built using" +
-      <strong>HTML</strong> +
-      "," +
-      <strong>CSS</strong> +
-      ", and " +
-      <strong>vanilla JavaScript</strong> +
-      ". Fetches real-time weather data from the OpenWeatherMap API.",
+      "A responsive weather forecast web application built using HTML, CSS, and vanilla JavaScript. Fetches real-time weather data from the OpenWeatherMap API.",
     Bullet: [
       "✅ Displays current weather, temperature, humidity, and wind speed",
       "✅ Search by city name with basic error handling",
@@ -226,20 +279,21 @@ export const projectData = [
     images: imgSlide6,
     github: "https://github.com/Himanshu-Yadav897/WeatherForcast",
     live: "https://weatherforcast001.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoCss3 />, color: "blue", label: "CSS" },
+      { icon: <BiLogoJavascript />, color: "sky", label: "JavaScript" },
+      { color: "sky", label: "OpenWeatherMap API" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Learned how to work with APIs using vanilla JS and practiced data fetching, logic building, and error handling.",
   },
   {
     year: "August 2024",
     title: "TinderWeb Clone",
     description:
-      " A visually animated card-swiping interface inspired by Tinder, built using" +
-      <strong>HTML</strong> +
-      "," +
-      <strong>Tailwind CSS</strong> +
-      ", and " +
-      <strong>vanilla JavaScript</strong> +
-      ". Designed specifically for" +
-      <strong>mobile screens</strong> +
-      ", this project focuses on layout, styling, and swipe-like animations",
+      "A visually animated card-swiping interface inspired by Tinder, built using HTML, Tailwind CSS, and vanilla JavaScript. Designed specifically for mobile screens, this project focuses on layout, styling, and swipe-like animations.",
     Bullet: [
       "✅ Card-swipe animation triggered on button clicks (Interested/Ignore)",
       "✅ Designed exclusively for mobile screens",
@@ -249,20 +303,20 @@ export const projectData = [
     images: imgSlide14,
     github: "https://github.com/Himanshu-Yadav897/TinderWeb",
     live: "https://tinderweb.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoTailwindCss />, color: "indigo", label: "Tailwind CSS" },
+      { icon: <BiLogoJavascript />, color: "sky", label: "JavaScript" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Helped me get comfortable with frontend development, animations, and improved my logic building skills.",
   },
   {
     year: "April 2024",
     title: "WanderLust",
     description:
-      "A full-stack travel blog platform built using" +
-      <strong>Node.js</strong> +
-      "," +
-      <strong>Express</strong> +
-      <strong>MongoDB</strong> +
-      ", and " +
-      <strong>EJS</strong> +
-      ". Designed specifically for" +
-      ". Supports CRUD operations for destinations and user-generated content.",
+      "A full-stack travel blog platform built using Node.js, Express, MongoDB, and EJS. Supports CRUD operations for destinations and user-generated content.",
     Bullet: [
       "✅ Users can create, edit, and delete travel destination posts",
       "✅ Used MongoDB for data persistence and Mongoose for schema modeling",
@@ -271,15 +325,23 @@ export const projectData = [
     ],
     images: imgSlide5,
     github: "https://github.com/Himanshu-Yadav897/wanderingWorld",
-    live: "https://github.com/Himanshu-Yadav897/wanderingWorld",
+    live: "https://github.com/Himanshu-Yadav897/wanderingWorld", // GitHub link used for live as well
+    tech: [
+      { icon: <BiLogoNodejs />, color: "emerald", label: "Node.js" },
+      { icon: <SiExpress />, color: "rose", label: "Express.js" },
+      { icon: <BiLogoMongodb />, color: "cyan", label: "MongoDB" },
+      { icon: <SiMongoose />, color: "indigo", label: "Mongoose" },
+      { icon: <SiEjs />, color: "amber", label: "EJS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Learned the basics of CRUD operations with MongoDB, but the complexity overwhelmed me and I gave up halfway.",
   },
   {
     year: "February 2024",
     title: "Password Generator",
     description:
-      "A lightweight web app built using " +
-      "HTML, CSS, and Vanilla JavaScript. " +
-      "It generates strong, secure passwords based on user-selected criteria like length and character types.",
+      "A lightweight web app built using HTML, CSS, and Vanilla JavaScript. It generates strong, secure passwords based on user-selected criteria like length and character types.",
     Bullet: [
       "✅ Customizable options for password length, uppercase, lowercase, numbers, and symbols",
       "✅ Real-time password strength feedback with visual indicators",
@@ -289,13 +351,20 @@ export const projectData = [
     images: imgSlide7,
     github: "https://github.com/Himanshu-Yadav897/password_generator",
     live: "https://password00generator.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoCss3 />, color: "blue", label: "CSS" },
+      { icon: <BiLogoJavascript />, color: "cyan", label: "JavaScript" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Learned DOM manipulation and built logic from scratch using vanilla JavaScript.",
   },
   {
     year: "January 2024",
     title: "Razorpay Landing Page Clone",
     description:
-      "A pixel-perfect clone of Razorpay’s official landing page, built using " +
-      "HTML, Tailwind CSS, and JavaScript. Focused on mastering real-world layout structures, responsive design, and utility-first styling.",
+      "A pixel-perfect clone of Razorpay’s official landing page, built using HTML, Tailwind CSS, and JavaScript. Focused on mastering real-world layout structures, responsive design, and utility-first styling.",
     Bullet: [
       "✅ Closely replicates Razorpay’s layout with precise spacing and typography",
       "✅ Fully responsive and mobile-friendly using Tailwind’s utility classes",
@@ -305,6 +374,14 @@ export const projectData = [
     images: imgSlide8,
     github: "https://github.com/Himanshu-Yadav897/RazorPay-Clone",
     live: "https://razorpayclone0.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoTailwindCss />, color: "indigo", label: "Tailwind CSS" },
+      { icon: <BiLogoJavascript />, color: "cyan", label: "JavaScript" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Went deep into UI/UX basics and mastered layout building using Tailwind CSS.",
   },
   {
     year: "November 2023",
@@ -320,6 +397,14 @@ export const projectData = [
     images: imgSlide9,
     github: "https://github.com/Himanshu-Yadav897/Simon-Says",
     live: "https://simon-saays.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoCss3 />, color: "blue", label: "CSS" },
+      { icon: <BiLogoJavascript />, color: "cyan", label: "JavaScript" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "My first project that focused purely on JavaScript logic building with visuals ",
   },
   {
     year: "November 2023",
@@ -335,6 +420,13 @@ export const projectData = [
     images: imgSlide15,
     github: "https://github.com/Himanshu-Yadav897/Assignment-4",
     live: "https://assignmen-04.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoTailwindCss />, color: "indigo", label: "Tailwind CSS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Learned how to build basic web layouts from scratch — without any tutorials.",
   },
   {
     year: "October 2023",
@@ -350,6 +442,13 @@ export const projectData = [
     images: imgSlide10,
     github: "https://github.com/Himanshu-Yadav897/BikeLandingPage",
     live: "https://bikeprojec.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoTailwindCss />, color: "indigo", label: "Tailwind CSS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Learned Tailwind CSS in depth and overcame fear of complex layouts by practicing thoroughly.",
   },
   {
     year: "September 2023",
@@ -365,6 +464,13 @@ export const projectData = [
     images: imgSlide11,
     github: "https://github.com/Himanshu-Yadav897/EGuru-Landing-page",
     live: "https://e-guru-landing.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoCss3 />, color: "blue", label: "CSS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Learned how to write classic CSS and apply responsive design principles effectively.",
   },
   {
     year: "August 2023",
@@ -380,20 +486,34 @@ export const projectData = [
     images: imgSlide12,
     github: "https://github.com/Himanshu-Yadav897/Assignment-2",
     live: "https://assignment-0002.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoCss3 />, color: "blue", label: "CSS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Learned how to think structurally while writing HTML and CSS from scratch.",
   },
   {
     year: "August 2023",
     title: "Genius Clone",
     description:
-      "A simple static webpage built as part of a PW Skills assignment. Focused purely on learning HTML and classic CSS fundamentals — no responsiveness or interactivity included.",
+      "A static clone of the Genius.com homepage built to practice basic HTML and CSS. Focused on replicating structure, typography, and layout without using any frameworks or advanced interactivity.",
     Bullet: [
-      "✅ Basic layout and styling using only classic CSS",
-      "✅ Practiced core HTML structure and tag usage",
-      "✅ No media queries or responsive design included",
-      "✅ Created solely for testing and hands-on practice",
+      "✅ Recreated homepage layout of Genius.com using HTML & CSS",
+      "✅ Practiced semantic HTML, box model, and positioning",
+      "✅ Typography and spacing matched closely to the original design",
+      "✅ Built without responsiveness or JavaScript interactivity",
     ],
     images: imgSlide13,
     github: "https://github.com/Himanshu-Yadav897/Genius-Clone",
-    live: "https://assignment-000003.netlify.app/",
+    live: "https://assignment-0002.netlify.app/",
+    tech: [
+      { icon: <BiLogoHtml5 />, color: "amber", label: "HTML" },
+      { icon: <BiLogoCss3 />, color: "blue", label: "CSS" },
+      { icon: <BiLogoGithub />, color: "teal", label: "Github" },
+    ],
+    reflection:
+      "Built this while watching tutorials and tried to understand layout, spacing, and structure.",
   },
 ];

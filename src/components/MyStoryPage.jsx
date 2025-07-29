@@ -34,7 +34,7 @@ const StickyTextReveal = ({ children, className = "", height = "100vh" }) => {
 
               return (
                 <span key={i} className="relative inline-block">
-                  <span className="absolute inset-0 opacity-15 text-gray-500">
+                  <span className="absolute inset-0 opacity-15 text-blue-200/30">
                     {word}
                   </span>
                   <motion.span style={{ opacity }} className="relative">
@@ -100,13 +100,13 @@ const StoryProgress = ({ chapters, currentChapter }) => {
             <div
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index <= currentChapter
-                  ? "bg-blue-400 shadow-lg shadow-blue-400/50"
-                  : "bg-gray-600"
+                  ? "bg-gradient-to-r from-blue-400 to-sky-400 shadow-lg shadow-blue-400/50"
+                  : "bg-slate-600"
               }`}
             />
             <span
               className={`text-xs font-medium transition-colors ${
-                index === currentChapter ? "text-blue-400" : "text-gray-500"
+                index === currentChapter ? "text-sky-400" : "text-blue-200/50"
               }`}
             >
               {chapter}
@@ -151,13 +151,13 @@ const HimanshuStoryPage = () => {
       <StoryProgress chapters={chapters} currentChapter={currentChapter} />
 
       {/* Introduction */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-gray-900 via-blue-950 to-purple-950">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-slate-900 via-blue-950/50 to-slate-900">
         <div className="max-w-4xl text-center space-y-8">
           <motion.h1
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="text-5xl md:text-7xl font-bold mb-12 bg-gradient-to-r from-white via-blue-400 to-purple-400 bg-clip-text text-transparent"
+            className="text-5xl md:text-7xl font-bold mb-12 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 bg-clip-text text-transparent"
           >
             Hey, I'm Himanshu.
           </motion.h1>
@@ -166,7 +166,7 @@ const HimanshuStoryPage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
-            className="text-xl md:text-2xl text-gray-300 leading-relaxed"
+            className="text-xl md:text-2xl text-blue-200/80 leading-relaxed"
           >
             This is my story — raw, honest, and still being written.
           </motion.div>
@@ -174,48 +174,48 @@ const HimanshuStoryPage = () => {
       </section>
 
       {/* Chapter 1: The Copy-Paste Dream */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-purple-950 via-blue-950 to-black">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-slate-900 via-blue-950/40 to-slate-800">
         <div className="max-w-4xl text-center space-y-8">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 bg-clip-text text-transparent"
           >
             Chapter 1: The Copy-Paste Dream
           </motion.h1>
 
           <TextReveal
             text="In 2nd grade, our teacher asked:"
-            className="text-gray-300"
+            className="text-blue-200/80"
           />
 
           <TextReveal
             text='"What do you want to be when you grow up?"'
-            className="text-blue-400 text-2xl md:text-3xl font-semibold italic"
+            className="text-sky-400 text-2xl md:text-3xl font-semibold italic"
             delay={0.3}
           />
 
           <TextReveal
             text="My best friend said,"
-            className="text-gray-300"
+            className="text-blue-200/80"
             delay={0.6}
           />
 
           <TextReveal
             text='"Software Engineer, like my uncle."'
-            className="text-green-400 text-xl md:text-2xl"
+            className="text-blue-300 text-xl md:text-2xl"
             delay={1}
           />
 
           <TextReveal
             text="I copied his answer —"
-            className="text-gray-300"
+            className="text-blue-200/80"
             delay={1.3}
           />
 
           <StickyTextReveal
-            className="text-yellow-400 font-medium text-2xl md:text-3xl lg:text-4xl"
+            className="text-sky-300 font-medium text-2xl md:text-3xl lg:text-4xl"
             height="h-[80vh]"
           >
             and somehow, that word stuck with me.
@@ -228,8 +228,7 @@ const HimanshuStoryPage = () => {
             transition={{ delay: 0.3, duration: 1 }}
             className="pt-8"
           >
-            {/* <div className="text-6xl md:text-8xl">👶</div> */}
-            <p className="text-gray-400 mt-4">
+            <p className="text-blue-200/60 mt-4">
               Sometimes the best decisions start with copying...
             </p>
           </motion.div>
@@ -237,31 +236,31 @@ const HimanshuStoryPage = () => {
       </section>
 
       {/* Chapter 2: The ₹27,000 Lesson */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-black via-red-950 to-gray-900">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-slate-800 via-red-950/30 to-slate-800">
         <div className="max-w-4xl text-center space-y-8">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-red-400 via-orange-400 to-blue-400 bg-clip-text text-transparent"
           >
             Chapter 2: The ₹27,000 Lesson
           </motion.h1>
 
           <TextReveal
             text="In our first year of college,"
-            className="text-gray-300"
+            className="text-blue-200/80"
           />
 
           <TextReveal
             text="we tried launching a startup."
-            className="text-blue-400"
+            className="text-sky-400"
             delay={0.3}
           />
 
           <TextReveal
             text="We paid someone"
-            className="text-gray-300"
+            className="text-blue-200/80"
             delay={0.6}
           />
 
@@ -280,19 +279,19 @@ const HimanshuStoryPage = () => {
           <div className="py-8">
             <TextReveal
               text="The startup failed."
-              className="text-red-500 text-2xl font-bold"
+              className="text-red-400 text-2xl font-bold"
               delay={2}
             />
             <TextReveal
               text="So did the website."
-              className="text-red-500 text-2xl font-bold"
+              className="text-red-400 text-2xl font-bold"
               delay={2.3}
             />
           </div>
 
           <TextReveal
             text="It broke me financially, and it taught me something important:"
-            className="text-gray-400"
+            className="text-blue-200/70"
             delay={2.6}
           />
 
@@ -319,25 +318,25 @@ const HimanshuStoryPage = () => {
       </section>
 
       {/* Chapter 3: Taking It Personally */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-gray-900 via-gray-800 to-black">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-slate-800 via-slate-700 to-slate-800">
         <div className="max-w-4xl text-center space-y-8">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-orange-400 via-red-400 to-blue-400 bg-clip-text text-transparent"
           >
             Chapter 3: Taking It Personally
           </motion.h1>
 
           <TextReveal
             text="When everything fell apart,"
-            className="text-gray-300"
+            className="text-blue-200/80"
           />
 
           <TextReveal
             text="my school friend — the same one I copied in 2nd grade —"
-            className="text-gray-400"
+            className="text-blue-200/60"
             delay={0.5}
           />
 
@@ -349,7 +348,7 @@ const HimanshuStoryPage = () => {
 
           <TextReveal
             text="Even a college friend said,"
-            className="text-gray-300"
+            className="text-blue-200/80"
             delay={1.5}
           />
 
@@ -368,13 +367,13 @@ const HimanshuStoryPage = () => {
 
           <TextReveal
             text="So I stopped explaining myself."
-            className="text-gray-300"
+            className="text-blue-200/80"
             delay={0.2}
           />
 
           <TextReveal
             text="I joined a library."
-            className="text-blue-400"
+            className="text-sky-400"
             delay={0.5}
           />
 
@@ -386,28 +385,28 @@ const HimanshuStoryPage = () => {
             className="pt-8"
           >
             <div className="text-6xl md:text-8xl">📚</div>
-            <p className="text-blue-400 mt-4 font-medium">
-              I’ll prove it. Not to them — to myself.
+            <p className="text-sky-400 mt-4 font-medium">
+              I'll prove it. Not to them — to myself.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Chapter 4: 6-7 Hours a Day */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-black via-blue-950 to-green-900">
+      {/* Chapter 4: Persistence Over Perfection */}
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-slate-800 via-blue-950/40 to-slate-700">
         <div className="max-w-4xl text-center space-y-8">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 bg-clip-text text-transparent"
           >
             Chapter 4: Persistence Over Perfection
           </motion.h1>
 
           <TextReveal
             text="Studied 6–7 hours a day."
-            className="text-blue-400 text-xl md:text-2xl font-bold"
+            className="text-sky-400 text-xl md:text-2xl font-bold"
           />
 
           <TextReveal
@@ -423,7 +422,7 @@ const HimanshuStoryPage = () => {
           />
 
           <StickyTextReveal
-            className="text-green-400 text-2xl md:text-3xl lg:text-4xl font-bold"
+            className="text-blue-300 text-2xl md:text-3xl lg:text-4xl font-bold"
             height="h-[70vh]"
           >
             But I didn't give up on myself.
@@ -432,12 +431,12 @@ const HimanshuStoryPage = () => {
           <div className="py-4 space-y-4">
             <TextReveal
               text="I kept coming back —"
-              className="text-gray-300"
+              className="text-blue-200/80"
               delay={0.2}
             />
             <TextReveal
               text="not because it was fun,"
-              className="text-gray-400"
+              className="text-blue-200/60"
               delay={0.5}
             />
             <TextReveal
@@ -461,8 +460,7 @@ const HimanshuStoryPage = () => {
             transition={{ delay: 0.5, duration: 1 }}
             className="pt-8"
           >
-            {/* <div className="text-6xl md:text-8xl">💪</div> */}
-            <p className="text-green-400 mt-4 font-medium">
+            <p className="text-blue-300 mt-4 font-medium">
               Every return was a victory.
             </p>
           </motion.div>
@@ -470,20 +468,20 @@ const HimanshuStoryPage = () => {
       </section>
 
       {/* Chapter 5: The DSA Struggle */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-green-900 via-purple-800 to-red-900">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-slate-700 via-blue-900/30 to-slate-800">
         <div className="max-w-4xl text-center space-y-8">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-green-400 via-purple-400 to-red-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-400 via-sky-400 to-cyan-400 bg-clip-text text-transparent"
           >
             Chapter 5: The DSA Struggle
           </motion.h1>
 
           <TextReveal
             text="I still remember when I started learning DSA."
-            className="text-gray-300"
+            className="text-blue-200/80"
           />
 
           <TextReveal
@@ -505,7 +503,7 @@ const HimanshuStoryPage = () => {
           />
 
           <StickyTextReveal
-            className="text-purple-400 text-2xl md:text-3xl lg:text-5xl"
+            className="text-sky-400 text-2xl md:text-3xl lg:text-5xl"
             height="h-[75vh]"
           >
             Arrays, recursion, dynamic programming — it all felt like a wall.
@@ -515,7 +513,7 @@ const HimanshuStoryPage = () => {
           <div className="py-4 space-y-4">
             <TextReveal
               text="Even now, I'm learning advanced graphs."
-              className="text-blue-400 font-semibold"
+              className="text-sky-400 font-semibold"
               delay={0.2}
             />
             <TextReveal
@@ -525,7 +523,7 @@ const HimanshuStoryPage = () => {
             />
             <TextReveal
               text="Still showing up."
-              className="text-green-400 font-bold text-xl"
+              className="text-blue-300 font-bold text-xl"
               delay={0.8}
             />
           </div>
@@ -538,7 +536,7 @@ const HimanshuStoryPage = () => {
             className="pt-8"
           >
             <div className="text-6xl md:text-8xl">🧗‍♂️</div>
-            <p className="text-purple-400 mt-4 font-medium">
+            <p className="text-sky-400 mt-4 font-medium">
               Every wall becomes a stepping stone
             </p>
           </motion.div>
@@ -546,36 +544,36 @@ const HimanshuStoryPage = () => {
       </section>
 
       {/* Chapter 6: Building Real Things */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-red-900 via-blue-800 to-purple-900">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-slate-800 via-blue-800/30 to-slate-900">
         <div className="max-w-4xl text-center space-y-8">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-red-400 via-blue-400 to-purple-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-600 via-sky-500 to-cyan-400 bg-clip-text text-transparent"
           >
             Chapter 6: Building Real Things
           </motion.h1>
 
           <TextReveal
-            text="Today, I’m finally doing what I always wanted to do:"
-            className="text-blue-400 text-xl"
+            text="Today, I'm finally doing what I always wanted to do:"
+            className="text-sky-400 text-xl"
           />
 
           <TextReveal
             text="Building real things."
-            className="text-red-400"
+            className="text-blue-300"
             delay={0.5}
           />
 
           <TextReveal
             text="Debugging for others."
-            className="text-green-400"
+            className="text-blue-300"
             delay={0.5}
           />
 
           <StickyTextReveal
-            className="text-yellow-400 text-xl md:text-2xl lg:text-3xl font-medium"
+            className="text-sky-300 text-xl md:text-2xl lg:text-3xl font-medium"
             height="h-[75vh]"
           >
             and chasing curiosity like it's my fuel.
@@ -589,7 +587,7 @@ const HimanshuStoryPage = () => {
             className="pt-8"
           >
             <div className="text-6xl md:text-8xl">🔥</div>
-            <p className="text-yellow-400 mt-4 font-medium">
+            <p className="text-sky-300 mt-4 font-medium">
               Curiosity is the ultimate fuel
             </p>
           </motion.div>
@@ -597,51 +595,50 @@ const HimanshuStoryPage = () => {
       </section>
 
       {/* Chapter 7: Becoming Great */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-purple-900 via-blue-800 to-black">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-slate-900 via-blue-950/40 to-black">
         <div className="max-w-4xl text-center space-y-8">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-600 via-sky-500 to-cyan-400 bg-clip-text text-transparent"
           >
             Chapter 7: Becoming Great
           </motion.h1>
 
           <TextReveal
             text="I don't just want to write code."
-            className="text-gray-300"
+            className="text-blue-200/80"
           />
 
           <TextReveal
             text="I want to write it well —"
-            className="text-blue-400 text-xl md:text-2xl"
+            className="text-sky-400 text-xl md:text-2xl"
             delay={0.5}
           />
 
           <TextReveal
             text="with focus, consistency, and pride."
-            className="text-purple-400 font-medium"
+            className="text-blue-300 font-medium"
             delay={1}
           />
 
           <div className="py-6">
             <TextReveal
-              // text="Because I'm not just here to be a developer."
-              text="Because I’m not here just to “get a job.”"
-              className="text-gray-300 text-xl"
+              text="Because I'm not here just to 'get a job.'"
+              className="text-blue-200/80 text-xl"
               delay={1.5}
             />
             <StickyTextReveal
               className="text-cyan-400 text-2xl md:text-3xl lg:text-4xl font-bold"
               height="h-[70vh]"
             >
-              I’m here to become great at what I do.
+              I'm here to become great at what I do.
             </StickyTextReveal>
           </div>
 
           <StickyTextReveal
-            className="text-yellow-400 text-xl md:text-2xl lg:text-3xl font-medium italic"
+            className="text-sky-300 text-xl md:text-2xl lg:text-3xl font-medium italic"
             height="h-[75vh]"
           >
             It took longer than I planned, but I never stopped moving.
@@ -658,25 +655,33 @@ const HimanshuStoryPage = () => {
             <p className="text-cyan-400 text-xl font-bold">
               The story continues...
             </p>
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            <p className="text-blue-200/80 text-lg max-w-2xl mx-auto">
               Every line of code, every debugging session, every small victory —
               it's all part of raising the bar to become a better developer.
             </p>
 
-            <p className="text-bold text-amber-50 text-lg max-w-2xl mx-auto">
-              And if you’ve made it this far — maybe you’re not here by
+            <p className="text-bold text-blue-100 text-lg max-w-2xl mx-auto">
+              And if you've made it this far — maybe you're not here by
               accident.
               <br />
-              You’ve read my story—now let’s write the next chapter together.
+              You've read my story—now let's write the next chapter together.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <button className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-blue-400 hover:text-black transition-all duration-300 cursor-pointer">
+              <motion.button 
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-gradient-to-r hover:from-blue-600 hover:via-sky-500 hover:to-blue-400 hover:text-white hover:border-transparent transition-all duration-300 cursor-pointer shadow-lg shadow-blue-500/25"
+              >
                 See My Work
-              </button>
-              <button className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-blue-400 hover:text-black transition-all duration-300 cursor-pointer">
+              </motion.button>
+              <motion.button 
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-white rounded-lg font-medium hover:from-blue-500 hover:via-sky-400 hover:to-blue-300 transition-all duration-300 cursor-pointer shadow-lg shadow-blue-500/25"
+              >
                 Let's Connect
-              </button>
+              </motion.button>
             </div>
           </motion.div>
         </div>
