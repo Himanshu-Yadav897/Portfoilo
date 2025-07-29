@@ -1,4 +1,11 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaHeart, FaCode, FaRocket } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaHeart,
+  FaCode,
+  FaRocket,
+} from "react-icons/fa";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { Sparkles, Coffee, Star, ArrowUp } from "lucide-react";
@@ -11,12 +18,12 @@ const Footer = () => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 300);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const containerVariants = {
@@ -25,9 +32,9 @@ const Footer = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -38,9 +45,9 @@ const Footer = () => {
       transition: {
         type: "spring",
         stiffness: 100,
-        damping: 12
-      }
-    }
+        damping: 12,
+      },
+    },
   };
 
   const socialLinks = [
@@ -49,22 +56,22 @@ const Footer = () => {
       icon: <FaGithub />,
       label: "GitHub",
       color: "hover:text-blue-400",
-      hoverBg: "hover:bg-blue-600/20"
+      hoverBg: "hover:bg-blue-600/20",
     },
     {
       href: "https://linkedin.com/in/himanshu-yadav897",
       icon: <FaLinkedin />,
       label: "LinkedIn",
       color: "hover:text-sky-400",
-      hoverBg: "hover:bg-sky-500/20"
+      hoverBg: "hover:bg-sky-500/20",
     },
     {
       href: "mailto:himanshuyadav897@gmail.com",
       icon: <FaEnvelope />,
       label: "Email",
       color: "hover:text-blue-300",
-      hoverBg: "hover:bg-blue-500/20"
-    }
+      hoverBg: "hover:bg-blue-500/20",
+    },
   ];
 
   const navigationLinks = [
@@ -76,7 +83,14 @@ const Footer = () => {
     { to: "#contact", label: "Contact", external: true },
   ];
 
-  const skills = ["React", "Node.js", "MongoDB", "JavaScript", "TypeScript", "AWS"];
+  const skills = [
+    "React",
+    "Node.js",
+    "MongoDB",
+    "JavaScript",
+    "TypeScript",
+    "AWS",
+  ];
 
   return (
     <motion.footer
@@ -90,7 +104,7 @@ const Footer = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Animated Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
-        
+
         {/* Floating Particles */}
         {[...Array(15)].map((_, i) => (
           <motion.div
@@ -144,9 +158,11 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-12">
-          
           {/* Brand Section */}
-          <motion.div variants={itemVariants} className="lg:col-span-1 space-y-6">
+          <motion.div
+            variants={itemVariants}
+            className="lg:col-span-1 space-y-6"
+          >
             <div className="group">
               <motion.h2
                 className="text-3xl font-bold text-white mb-2 transition duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:via-sky-500 group-hover:to-blue-400 group-hover:bg-clip-text group-hover:text-transparent cursor-pointer"
@@ -159,9 +175,10 @@ const Footer = () => {
                 <span>Full Stack Developer</span>
               </div>
             </div>
-            
+
             <p className="text-gray-400 leading-relaxed">
-              Passionate about creating innovative web solutions and bringing ideas to life through code.
+              Passionate about creating innovative web solutions and bringing
+              ideas to life through code.
             </p>
 
             {/* Quick Skills */}
@@ -228,7 +245,7 @@ const Footer = () => {
                 <span className="text-sm">Available for opportunities</span>
               </div>
               <div className="text-gray-400 text-sm">
-                <p>📍 Dadri, Uttar Pradesh, India</p>
+                <p>📍Mayur Vihar Phase 3, Delhi - 110096 , India</p>
                 <p>⏰ Usually responds within 24 hours</p>
               </div>
             </div>
