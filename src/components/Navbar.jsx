@@ -269,9 +269,6 @@ const Navbar = () => {
                     <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 bg-clip-text text-transparent mb-2">
                       Navigation
                     </h3>
-                    <p className="text-gray-400 text-sm">
-                      Explore my portfolio
-                    </p>
                   </motion.div>
 
                   {/* Mobile Menu Items */}
@@ -291,7 +288,7 @@ const Navbar = () => {
                         <Link
                           to={item.to}
                           onClick={() => setIsMenuOpen(false)}
-                          className={`flex items-center gap-4 p-4 rounded-xl transition-all duration-300 ${
+                          className={`flex items-center gap-2 p-2 rounded-xl transition-all duration-300 ${
                             activeSection === item.to
                               ? "bg-gradient-to-r from-blue-600/20 via-sky-500/20 to-blue-400/20 text-white border border-blue-400/30"
                               : "text-gray-300 hover:text-white hover:bg-blue-600/10"
@@ -321,18 +318,6 @@ const Navbar = () => {
                         Download Resume
                       </a>
                     </motion.div>
-                  </motion.div>
-
-                  {/* Mobile Menu Footer */}
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.3 }}
-                    className="text-center mt-8 pt-8 border-t border-blue-400/30"
-                  >
-                    <p className="text-gray-400 text-sm">
-                      Ready to work together? Let's connect!
-                    </p>
                   </motion.div>
                 </div>
               </motion.div>
